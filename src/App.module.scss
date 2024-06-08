@@ -1,0 +1,171 @@
+/* App.module.scss */
+body {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(182.54deg, #1F50E8 20.95%, #7996F0 134.42%);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.main_text{
+  color:#1d5deb;
+}
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+p {
+  font-size: 18px;
+}
+
+.menu {
+  width: 93%;
+  max-width: 420px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 10px 10px 0px 0px;
+  z-index: 100;
+}
+
+.menu .btn {
+  transition: .7s;
+  width: 80px;
+  height: 80px;
+  font-size: 32px;
+  border-color: none !important;
+  border-radius: 20px !important;
+  color: #0d4cd3;
+  background: #edf2fe;
+}
+.second{
+  color: rgb(226, 65, 65);
+}
+.icon {
+  font-size: 32px !important;
+}
+
+.btn:hover {
+  transition: .7s;
+  background-color: #1d5deb !important;
+  color: white !important;
+  border-color: none !important;
+  border: 0 !important;
+ 
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clickButton {
+  cursor: pointer;
+  width: 60%;
+  max-width: 300px;
+  height: auto;
+  margin-top: 20px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.clickButton:active {
+  animation: click-animation 0.2s ease-in-out;
+}
+
+@keyframes click-animation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.97);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.topbar{
+  width: 100%;
+  height: 80px;
+  max-width: 420px;
+  justify-content: center;
+  display: flex inline;
+  border-radius: 0px 0px 10px 10px;
+
+
+  background-color: white !important;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.logos{
+  width: 95%;
+  padding-top: 15px;
+  position: relative;
+}
+.scoreImg {
+  width: 30%;
+  height: 30%;
+}
